@@ -1,0 +1,7 @@
+<div *ngIf="canShow">Estamos mostrando isso</div>
+<div *ngIf="canShow == false; else notFound">Não estamos mostrando isso</div>
+<ng-template #notFound>
+  <div>
+    Ocorreu um erro, tente novamente
+  </div>
+</ng-template>
